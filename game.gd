@@ -29,8 +29,16 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if(dustBunny.touched):
-		print("restart game")
-		get_tree().reload_current_scene()
+		#print("restart game")
+		#get_tree().reload_current_scene()
+		get_node("Lose").visible = true
+		if (get_node("Lose").flag == true):
+			get_tree().reload_current_scene()
+		
+	if(score == 5):
+		get_node("Win").visible = true
+		if (get_node("Win").flag == true):
+			get_tree().reload_current_scene()
 	
 	scoreLabel.text = str(score)
 	if(!cheeseOne_check):
