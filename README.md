@@ -12,15 +12,8 @@ Mouse and Cheese is a fun and simple game developed by the **Kalamazoo Valley Co
 This game was developed over the course of the semester. The Animation and Game Club met **every Friday from 11:00 AM to 12:00 PM** to collaborate on the project.
 
 ## Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/ofgrenudo/Mouse-and-Cheese.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd Mouse-and-Cheese
-   ```
-3. Run the game (depending on the development environment and engine used).
+
+....
 
 ## Contributors
 A huge thanks to all the members of the **KVCC Animation and Game Club** who contributed their time and skills to bring this game to life!
