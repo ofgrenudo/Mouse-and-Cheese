@@ -19,15 +19,19 @@ func _process(delta: float) -> void:
 	# When the input action "up" is pressed, we do the following:
 	if Input.is_action_pressed("left"):
 		#print("Go Left")
+		rotation_degrees = -90.0
 		position.x -= 10
 	if Input.is_action_pressed("right"):
 		#print("Go Right")
+		rotation_degrees = 90.0
 		position.x += 10
 	if Input.is_action_pressed("up"):
 		#print("Go Up")
+		rotation_degrees = 0.0
 		position.y -= 10
 	# When the input action "down" is pressed, we do the following:
 	if Input.is_action_pressed("down"):
 		#print("Go Down")
+		rotation_degrees = 180.0
 		position.y += 10
 	pass
