@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bl01cksguqtl1"]
+
+[ext_resource type="Script" uid="uid://xe82660iyvpi" path="res://character.gd" id="2_dnsgr"]
+[ext_resource type="Texture2D" uid="uid://b6qcs4bhuuuqc" path="res://Assets/Mouse 2/Mouse 2.png" id="2_kxgwo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o3dsc"]
+
+[node name="Character" type="Node2D"]
+script = ExtResource("2_dnsgr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_kxgwo")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2d" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+shape = SubResource("CircleShape2D_o3dsc")

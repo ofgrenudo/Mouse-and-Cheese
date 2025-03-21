@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://vm3icu05qghs"]
+
+[ext_resource type="Script" uid="uid://dmjpdt60cq18e" path="res://dust_bunny.gd" id="1_2hbmo"]
+[ext_resource type="Texture2D" uid="uid://cxb2ctky8jqjp" path="res://Assets/Dust Bunny1.png" id="1_pbpkg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v22qj"]
+radius = 14.0357
+
+[node name="DustBunny" type="Node2D"]
+script = ExtResource("1_2hbmo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
+texture = ExtResource("1_pbpkg")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+shape = SubResource("CircleShape2D_v22qj")
+
+[connection signal="area_entered" from="Sprite2D/Area2D" to="." method="_on_area_2d_area_entered"]
