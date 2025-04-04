@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://cxb2ctky8jqjp" path="res://Assets/Dust Bunny1.png" id="1_pbpkg"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_v22qj"]
-radius = 14.0357
+radius = 11.5109
 
 [node name="DustBunny" type="Node2D"]
 script = ExtResource("1_2hbmo")
